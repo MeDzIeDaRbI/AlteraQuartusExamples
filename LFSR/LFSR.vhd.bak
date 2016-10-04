@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity LFSR is
+	port(
+			clk, START : in std_logic;
+			S : out std_logic_vector(7 downto 0));
+	end LFSR;
+	
+architecture one of LFSR is
+
+	signal A : std_logic_vector(8 downto 0);
+	signal set, reset : std_logic_vector(8 downto 1);
+	component DFF_SR is
+		port (
+        D, clk, set, reset : in std_logic;
+        Q : out std_logic
+	   );
+	end component;
+	begin
+	A="10000000";
+	if start ='0' then
+	   set(0) <= '1';
+	   GE:for i in 1 to 7 generate
+		    reset(i)<= '1';
+	    end generate;
+	else 
+	    GE:for i in 0 to 7 generate
+		    set(i) <= '1';
+		    reset(i)<= '1';
+	    end generate;
+	end if ;
+	    GE:for i in 0 to 7 GENerate 
+		 D<=A(2)xor A(7);
+		 G2: DFF_SR PORT MAP (D,clk,set(i),reset(i),A(i));
+	    end generate;
+    S <= A ;
+end one;

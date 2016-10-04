@@ -1,0 +1,7 @@
+entity DFF_SR is
+port (D, clk, set, reset : in std_logic;
+Q : out std_logic);
+end DFF_SR;
+architecture one of DFF_SR is
+--
+end one;

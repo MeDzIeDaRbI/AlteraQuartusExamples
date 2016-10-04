@@ -1,0 +1,99 @@
+|LFSR
+clk => DFF_SR:GE:1:G2.clk
+clk => DFF_SR:GE:2:G2.clk
+clk => DFF_SR:GE:3:G2.clk
+clk => DFF_SR:GE:4:G2.clk
+clk => DFF_SR:GE:5:G2.clk
+clk => DFF_SR:GE:6:G2.clk
+clk => DFF_SR:GE:7:G2.clk
+clk => DFF_SR:GE:8:G2.clk
+START => DFF_SR:GE:1:G2.reset
+START => DFF_SR:GE:2:G2.reset
+START => DFF_SR:GE:3:G2.reset
+START => DFF_SR:GE:4:G2.reset
+START => DFF_SR:GE:5:G2.reset
+START => DFF_SR:GE:6:G2.reset
+START => DFF_SR:GE:7:G2.reset
+START => DFF_SR:GE:8:G2.set
+S[0] <= DFF_SR:GE:1:G2.Q
+S[1] <= DFF_SR:GE:2:G2.Q
+S[2] <= DFF_SR:GE:3:G2.Q
+S[3] <= DFF_SR:GE:4:G2.Q
+S[4] <= DFF_SR:GE:5:G2.Q
+S[5] <= DFF_SR:GE:6:G2.Q
+S[6] <= DFF_SR:GE:7:G2.Q
+S[7] <= DFF_SR:GE:8:G2.Q
+
+
+|LFSR|DFF_SR:\GE:1:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LFSR|DFF_SR:\GE:2:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LFSR|DFF_SR:\GE:3:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LFSR|DFF_SR:\GE:4:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LFSR|DFF_SR:\GE:5:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LFSR|DFF_SR:\GE:6:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LFSR|DFF_SR:\GE:7:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LFSR|DFF_SR:\GE:8:G2
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+set => Q.IN0
+reset => Q~reg0.ACLR
+reset => Q.IN1
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
